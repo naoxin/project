@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="#FF5A54"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/sao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_scan_top" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:src="@mipmap/qq" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_mes_top" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.2"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/fra_vp"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"></android.support.v4.view.ViewPager>
+
+            <GridView
+                android:id="@+id/home_fra_gv"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/fra_vp"
+                android:background="#FFFFFF"
+                android:numColumns="4"></GridView>
+
+            <RelativeLayout
+                android:id="@+id/home_hor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_fra_gv"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/fra_im"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/fra_im">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/hor_home_im1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/hor_home_im2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/hor_home_im3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/hor_home_im4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/hor_home_im5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/hor_home_im6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/home_ping"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/home_hor"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:id="@+id/aojiao_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/home_ping"
+                android:orientation="vertical">
+
+                <com.hhzmy.view.MyGridView
+                    android:id="@+id/home_aojiao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:numColumns="2"></com.hhzmy.view.MyGridView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_zs"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/aojiao_home"
+                android:scaleType="fitXY" />
+
+
+            <RelativeLayout
+                android:id="@+id/home_zs_yu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/home_zs">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/home_zs_yun1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/home_zs_yun2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/muying_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/home_zs_yu"
+                android:orientation="vertical">
+
+                <com.hhzmy.view.MyGridView
+                    android:id="@+id/home_muying"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:numColumns="4"></com.hhzmy.view.MyGridView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_zhu"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/muying_home"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:id="@+id/zhu_ti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/home_zhu"
+                android:orientation="vertical">
+
+                <com.hhzmy.view.MyListView
+                    android:id="@+id/hp_home_lv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"></com.hhzmy.view.MyListView>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_lama"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/zhu_ti"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/lama_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/home_lama"
+                android:orientation="vertical">
+
+                <com.hhzmy.view.MyListView
+                    android:id="@+id/hp_home_lama"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"></com.hhzmy.view.MyListView>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_gengduo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/lama_home"
+                android:scaleType="fitXY" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

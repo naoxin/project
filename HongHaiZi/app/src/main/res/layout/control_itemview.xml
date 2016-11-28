@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/cancel_view_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/start_spots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AutoWrapTv"
+        android:text="开始识别" />"
+    <TextView
+        android:id="@+id/stop_spots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AutoWrapTv"
+        android:text="暂停识别" />
+    <TextView
+        android:id="@+id/show_rect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AutoWrapTv"
+        android:text="显示扫描框" />
+
+    <TextView
+        android:id="@+id/hidden_rect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AutoWrapTv"
+        android:text="隐藏扫描框" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cancel_view_linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp">
+    <TextView
+        android:id="@+id/start_spot_showrect"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        style="@style/AutoWrapTv"
+        android:text="开始识别显示扫描框" />
+
+    <TextView
+        android:id="@+id/stop_spot_hiddenrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AutoWrapTv"
+        android:text="暂停识别隐藏扫描框" />
+    <TextView
+        android:id="@+id/open_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AutoWrapTv"
+        android:text="开灯" />
+
+    <TextView
+        android:id="@+id/close_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AutoWrapTv"
+        android:text="关灯" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_marginTop="10dp"
+    >
+
+        <TextView
+            android:id="@+id/tv_recycle_line"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:text="23135456"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="40dp"
+            />
+    <TextView
+        android:id="@+id/recycle_line_iamge"
+        android:layout_width="4dp"
+        android:layout_height="50dp"
+        android:background="#fac608"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
